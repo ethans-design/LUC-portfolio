@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, .logo { font-family: "Space Grotesk", Inter, sans-serif; }
+h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; }
 
 a { color: inherit; }
 
@@ -39,7 +39,14 @@ a { color: inherit; }
   background: var(--bg);
 }
 
-.logo { font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+.logo {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-decoration: none;
+}
 
 nav a {
   margin-left: 24px;
@@ -179,6 +186,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 @media (max-width: 560px) {
   .site-header { padding: 16px; }
+  .logo { font-size: 1.35rem; }
   nav a { margin-left: 14px; }
   main { padding: 0 16px; }
   .about { margin: 0 -16px; padding: 56px 16px; }
