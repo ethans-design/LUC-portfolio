@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luc Carner | Environmental Design</title>
+  <meta name="description" content="Portfolio of Luc Carner, Environmental Design student working across architecture, computational design, and garment making.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Luc Carner</a>
+    <nav>
+      <a href="#work">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Environmental Design Student</p>
+      <h1>Designing spaces, objects, and the things we wear.</h1>
+      <p class="lede">I'm Luc Carner, an ENVD student working across architecture, computational design, and garment making. I'm interested in how ideas move between the scale of a building and the scale of the body.</p>
+      <div class="hero-actions">
+        <a class="button" href="#work">View projects</a>
+        <a class="button button-ghost" href="https://www.linkedin.com/in/luc-carner-534093316/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="filters" aria-label="Project categories">
+          <span>Architecture</span><span>Computational</span><span>Fashion</span>
+        </p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">Image coming soon</div>
+          <p class="tag">Architecture · Studio</p>
+          <h3>Studio project</h3>
+          <p>Project description coming soon. Drawings and models made in Rhino, AutoCAD, and the Adobe suite.</p>
+        </article>
+        <article class="card">
+          <div class="thumb">Image coming soon</div>
+          <p class="tag">Computational design</p>
+          <h3>Parametric study</h3>
+          <p>Project description coming soon. A form-finding exploration built in Grasshopper.</p>
+        </article>
+        <article class="card">
+          <div class="thumb">Image coming soon</div>
+          <p class="tag">Fashion · Garment</p>
+          <h3>Garment project</h3>
+          <p>Project description coming soon. Patterns drafted and sewn by hand.</p>
+        </article>
+        <article class="card">
+          <div class="thumb">Image coming soon</div>
+          <p class="tag">Visual communication</p>
+          <h3>Graphics and representation</h3>
+          <p>Project description coming soon. Diagrams, boards, and layouts made in Illustrator, Photoshop, and InDesign.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm an Environmental Design student, and my work covers a lot of ground, from architectural studio projects to parametric experiments to clothing. I like making things with my hands as much as on screen. The precision of drafting and modeling carries into my pattern making, and working with fabric shapes how I think about material and form in space.</p>
+          <p>I'm always open to collaborations, internships, and new projects.</p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>Adobe Creative Suite</li>
+            <li>Rhino</li>
+            <li>Grasshopper</li>
+            <li>AutoCAD</li>
+            <li>Sewing</li>
+            <li>Pattern making</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's work together</h2>
+      <a class="email" href="mailto:luccarner@gmail.com">luccarner@gmail.com</a>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/luc-carner-534093316/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="mailto:luccarner@gmail.com">Email ↗</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Luc Carner</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
