@@ -255,12 +255,19 @@
     const box = document.getElementById('lightbox');
     document.querySelectorAll('a.zoom').forEach(a => a.addEventListener('click', e => {
       e.preventDefault();
-      const img = a.querySelector('img');
-      box.querySelector('img').src = a.href;
-      box.querySelector('img').alt = img.alt;
-      box.querySelector('.caption').textContent = img.alt;
+      const thumb = a.querySelector('img');
+      const view = box.querySelector('img');
+      // Show the already-loaded thumbnail right away so the last photo never flashes,
+      // then swap in the full-size image once it has downloaded.
+      view.src = thumb.currentSrc || thumb.src;
+      view.alt = thumb.alt;
+      box.querySelector('.caption').textContent = thumb.alt;
       box.showModal();
+      const full = new Image();
+      full.onload = () => { if (view.alt === thumb.alt && box.open) view.src = full.src; };
+      full.src = a.href;
     }));
+    box.addEventListener('close', () => box.querySelector('img').removeAttribute('src'));
     box.addEventListener('click', e => { if (e.target === box || e.target.classList.contains('close')) box.close(); });
   </script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
