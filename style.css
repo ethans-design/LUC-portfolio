@@ -142,7 +142,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .gallery figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--olive); }
 
 /* Cloud Case: film on top, even grid below */
-.film { margin-bottom: 24px; }
+.film { margin-top: 24px; }
 .film video {
   display: block;
   width: 100%;
